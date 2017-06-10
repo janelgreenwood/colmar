@@ -1,3 +1,4 @@
+/* High level layout */
 body {
   font-family: 'Lora', serif;
   font-size: 10px;
@@ -41,14 +42,43 @@ h2 {
   padding: 32px 0;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 p {
   font-size: 14px;
   line-height: 18px;
 }
 
-h3 {
-  font-size: 20px;
+.summary-articles {
+  display: flex;
 }
+
+.summary-articles .image-column {
+  width: 35%;
+  padding: 16px;
+}
+
+.summary-articles .text-column {
+  padding-top: 32px;
+  width: 65%;
+  padding-right: 16px;
+}
+
+.summary-articles p {
+  padding-top: 8px;
+  padding-bottom: 15px;
+}
+
+.summary-articles a {
+  color: #090942;
+}
+
+.summary-articles.special {
+  background-color: #e2f2fd;
+}
+
 
 /* Header Section */
 header {
@@ -94,8 +124,8 @@ header li {
 
 }
 
-/* Learn Something */
 
+/* Learn Something */
 .learn-something {
   background-color: #a3daff;
 }
@@ -132,27 +162,13 @@ header li {
   color: white;
 }
 
-/* Keep Practicing  */
 
+/* Keep Practicing  */
 .author {
   padding-top: 32px;
 }
 
-.summary-articles {
-  display: flex;
-}
-
-.summary-articles .image-column {
-  width: 35%;
-  padding: 16px;
-}
-
-.summary-articles .text-column {
-  padding-top: 32px;
-  width: 65%;
-}
-
-.summary-articles .text-column p {
-  padding-top: 8px;
-  padding-bottom: 15px;
+.keep-practicing .right-column {
+  position: relative;
+  top: -16px;
 }
