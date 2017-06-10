@@ -3,6 +3,10 @@ body {
   font-size: 10px;
 }
 
+.content {
+  padding-top: 64px;
+}
+
 .site-width {
   max-width: 1200px;
   padding-left: 24px;
@@ -10,8 +14,40 @@ body {
   margin: 0 auto;
 }
 
-.content {
-  padding-top: 64px;
+.columns {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.left-column {
+  width: 60%;
+  padding-right: 24px;
+}
+
+.right-column {
+  width: 35%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 32px 0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 /* Header Section */
@@ -58,4 +94,65 @@ header li {
 
 }
 
-/* Section */
+/* Learn Something */
+
+.learn-something {
+  background-color: #a3daff;
+}
+
+.learn-something .right-column {
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.learn-something .text-group {
+  padding-right: 60px;
+  color: #090942;
+}
+
+.learn-something h2 {
+  font-size: 44px;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+.learn-something p {
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+
+.learn-something button {
+  background-color: #090942;
+  width: 80%;
+  padding: 8px;
+  text-align: center;
+  border: none;
+  font-size: 12px;
+  color: white;
+}
+
+/* Keep Practicing  */
+
+.author {
+  padding-top: 32px;
+}
+
+.summary-articles {
+  display: flex;
+}
+
+.summary-articles .image-column {
+  width: 35%;
+  padding: 16px;
+}
+
+.summary-articles .text-column {
+  padding-top: 32px;
+  width: 65%;
+}
+
+.summary-articles .text-column p {
+  padding-top: 8px;
+  padding-bottom: 15px;
+}
