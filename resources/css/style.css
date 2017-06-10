@@ -1,0 +1,61 @@
+body {
+  font-family: 'Lora', serif;
+  font-size: 10px;
+}
+
+.site-width {
+  max-width: 1200px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+}
+
+.content {
+  padding-top: 64px;
+}
+
+/* Header Section */
+header {
+  background-color: white;
+  position: fixed;
+  z-index: 40;
+  width: 100%;
+}
+
+header .site-width {
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  position: relative;
+  top: 3px;
+  height: 40px;
+}
+
+.logo h1 {
+  font-weight: regular;
+  font-size: 22px;
+}
+.logo h1 strong {
+  font-weight: bold;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  padding-left: 16px;
+  font-size: 12px;
+
+}
+
+/* Section */
