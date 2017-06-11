@@ -36,6 +36,12 @@ img {
   display: block;
 }
 
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 h2 {
   font-size: 32px;
   font-weight: bold;
@@ -171,4 +177,111 @@ header li {
 .keep-practicing .right-column {
   position: relative;
   top: -16px;
+}
+
+/* Grid Box */
+
+.grid-box {
+  background-color: #a3daff;
+}
+
+/* Start Learning Title */
+
+.start-learning-title {
+  display: flex;
+  padding-top: 32px;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.start-learning-title h2 {
+  padding-bottom: 0;
+}
+
+/* Start Learning */
+
+
+
+.feature-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: center;
+}
+
+.learning-feature {
+  height: 300px;
+  width: 26%;
+  margin: 32px;
+  background-color: white;
+}
+
+.learning-feature h3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+}
+
+.learning-feature h4 {
+  padding-top: 8px;
+  font-size: 16px;
+  padding-left: 16px;
+}
+
+.learning-feature p {
+  padding-top: 8px;
+  padding-left: 16px;
+}
+
+/* Thesis Title */
+
+.thesis {
+  display: flex;
+  padding-top: 32px;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Feature */
+
+.design .feature-article p {
+  padding-top: 24px;
+}
+
+.design .feature-article h3 {
+  padding-top: 24px;
+}
+
+.design .columns {
+  padding-top: 0;
+}
+
+.design .right-column {
+  position: relative;
+  top: -16px;
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid #cecece;
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+
+footer .site-width {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+footer nav li {
+    margin-left: 10px;
 }
