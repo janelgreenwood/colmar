@@ -1,4 +1,8 @@
 /* High level layout */
+.mobile {
+  display: none;
+}
+
 body {
   font-family: 'Lora', serif;
   font-size: 10px;
@@ -61,6 +65,10 @@ p {
   display: flex;
 }
 
+.summary-articles:hover {
+  background-color: #e2f2fd;
+}
+
 .summary-articles .image-column {
   width: 35%;
   padding: 16px;
@@ -81,12 +89,7 @@ p {
   color: #090942;
 }
 
-.summary-articles.special {
-  background-color: #e2f2fd;
-}
-
-
-/* Header Section */
+/* Header */
 header {
   background-color: white;
   position: fixed;
@@ -130,7 +133,6 @@ header li {
 
 }
 
-
 /* Learn Something */
 .learn-something {
   background-color: #a3daff;
@@ -168,7 +170,6 @@ header li {
   color: white;
 }
 
-
 /* Keep Practicing  */
 .author {
   padding-top: 32px;
@@ -180,13 +181,11 @@ header li {
 }
 
 /* Grid Box */
-
 .grid-box {
   background-color: #a3daff;
 }
 
 /* Start Learning Title */
-
 .start-learning-title {
   display: flex;
   padding-top: 32px;
@@ -200,9 +199,6 @@ header li {
 }
 
 /* Start Learning */
-
-
-
 .feature-box {
   display: flex;
   flex-wrap: wrap;
@@ -237,7 +233,6 @@ header li {
 }
 
 /* Thesis Title */
-
 .thesis {
   display: flex;
   padding-top: 32px;
@@ -247,7 +242,6 @@ header li {
 }
 
 /* Feature */
-
 .design .feature-article p {
   padding-top: 24px;
 }
@@ -266,7 +260,6 @@ header li {
 }
 
 /* Footer */
-
 footer {
   border-top: 1px solid #cecece;
   padding-top: 12px;
@@ -284,4 +277,104 @@ footer nav ul {
 
 footer nav li {
     margin-left: 10px;
+}
+
+
+
+/* Mobile */
+@media only screen and (max-width:480px) {
+
+  /* High level layout */
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .site-width {
+    padding: 0;
+  }
+
+  .columns {
+    display: block;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Header */
+  header nav {
+    width: 100%;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header li {
+    padding-right: 16px;
+  }
+
+  /* Learn Something */
+  .learn-something .left-column {
+    height: 180px;
+    overflow: hidden;
+  }
+
+  .learn-something .right-column {
+    padding: 0 16px 32px 16px;
+    box-sizing: border-box;
+  }
+
+  .learn-something .text-group {
+    padding-right: 0;
+  }
+
+  .learn-something button {
+    width: 100%;
+  }
+
+  /* Keep Practicing */
+  .summary-articles {
+    display: block;
+  }
+
+  .summary-articles .image-column {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .summary-articles .text-column {
+    padding: 0 16px 16px 16px;
+  }
+
+  /* Start Learning */
+  .start-learning-title h2 {
+    padding-bottom: 16px;
+  }
+
+  .start-learning-mobile li {
+    padding: 16px;
+    margin: 0 16px 8px 16px;
+    background-color: #a3daff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .grid-box {
+    background-color: white;
+  }
+
+  /* Footer */
+  footer {
+    border-top: none;
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
 }

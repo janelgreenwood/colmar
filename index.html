@@ -10,7 +10,7 @@
   <body>
 
 
-    <header>
+    <header class="desktop">
       <div class="site-width">
         <div class="logo">
           <div class="logo-image">
@@ -26,6 +26,19 @@
             <li>Online</li>
             <li>Our Companies</li>
             <li>Sign in</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <header class="mobile">
+      <div class="site-width">
+        <nav>
+          <ul>
+            <li><img src="./resources/images/ic-logo.svg"></li>
+            <li><img src="./resources/images/ic-on-campus.svg"></li>
+            <li><img src="./resources/images/ic-online.svg"></li>
+            <li><img src="./resources/images/ic-login.svg"></li>
           </ul>
         </nav>
       </div>
@@ -51,7 +64,7 @@
 
       <div class="feature keep-practicing">
         <div class="site-width columns">
-          <div class="left-column">
+          <div class="left-column desktop">
             <div class="feature-article">
               <img src="./resources/images/information-main.jpg">
               <h2>It doesn't hurt to keep practicing</h2>
@@ -62,7 +75,8 @@
           <div class="right-column">
             <div class="summary-articles">
               <div class="image-column">
-                <img src="./resources/images/information-orientation.jpg">
+                <img class="desktop" src="./resources/images/information-orientation.jpg">
+                <img class="mobile" src="./resources/images/information-orientation-mobile.jpg">
               </div>
               <div class="text-column">
                 <h3>Orientation date</h3>
@@ -72,7 +86,8 @@
             </div>
             <div class="summary-articles">
               <div class="image-column">
-                <img src="./resources/images/information-campus.jpg">
+                <img class="desktop" src="./resources/images/information-campus.jpg">
+                <img class="mobile" src="./resources/images/information-campus-mobile.jpg">
               </div>
               <div class="text-column">
                 <h3>Our campus</h3>
@@ -80,9 +95,10 @@
                 <a href="#">Read more</a>
               </div>
             </div>
-            <div class="summary-articles special">
+            <div class="summary-articles">
               <div class="image-column">
-                <img src="./resources/images/information-guest-lecture.jpg">
+                <img class="desktop" src="./resources/images/information-guest-lecture.jpg">
+                <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg">
               </div>
               <div class="text-column">
                 <h3>Our guest lecture</h3>
@@ -101,7 +117,7 @@
           </div>
         </div>
 
-        <div class="start-learning">
+        <div class="start-learning desktop">
           <div class="site-width">
             <div class="feature-box">
               <div class="learning-feature">
@@ -140,9 +156,18 @@
                 <h4>Courses</h4>
                 <p>Analytics, Content Marketing, Mobile Marketing</p>
               </div>
-          </div>
+            </div>
           </div>
         </div>
+
+        <ul class="start-learning-mobile mobile">
+          <li>Software engineering</li>
+          <li>Computer art</li>
+          <li>Design</li>
+          <li>Data</li>
+          <li>Business</li>
+          <li>Marketing</li>
+        </ul>
     </div>
 
       <div class="thesis">
@@ -156,11 +181,13 @@
           <div class="left-column">
             <div class="feature-article">
               <video src="./resources/videos/thesis.mp4" controls> Video not supported </video>
-              <h3>Reimagine Urban</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id pellentesque ligula. Proin dolor urna, placerat ac ante non, cursus rutrum ligula.</p>
+              <div class="desktop">
+                <h3>Reimagine Urban</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id pellentesque ligula. Proin dolor urna, placerat ac ante non, cursus rutrum ligula.</p>
+              </div>
             </div>
           </div>
-          <div class="right-column">
+          <div class="right-column desktop">
             <div class="summary-articles">
               <div class="image-column">
                 <img src="./resources/images/thesis-fisma.jpg">
@@ -188,7 +215,7 @@
             <div class="copyright">
               <p>© Colmar Academy. All rights reserved</p>
             </div>
-              <nav>
+              <nav class="desktop">
                 <ul>
                   <li>Terms</li>
                   <li>Privacy</li>
