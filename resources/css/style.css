@@ -377,4 +377,11 @@ footer nav li {
     padding-top: 40px;
     padding-bottom: 16px;
   }
+
+  .keep-practicing .right-column {
+    top: 0;
+  }
+  .design .right-column {
+    top: 0;
+  }
 }
