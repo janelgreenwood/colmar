@@ -282,7 +282,7 @@ footer nav li {
 
 
 /* Mobile */
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:700px) {
 
   /* High level layout */
   .desktop {
